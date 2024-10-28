@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Resizer and Compressor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Resizer & Filters</h1>
+        
+        <!-- Image Upload Section -->
+        <div class="section">
+            <label for="upload">Choose an image</label>
+            <input type="file" id="upload" accept="image/*">
+        </div>
+
+        <!-- Filter Options -->
+        <div class="section">
+            <label for="filter">Filter</label>
+            <select id="filter">
+                <option value="none">None</option>
+                <option value="grayscale">Grayscale</option>
+                <option value="sepia">Sepia</option>
+                <option value="invert">Invert</option>
+                <option value="edge">Edge Detection</option>
+            </select>
+        </div>
+
+        <!-- Resize Options -->
+        <div class="section">
+            <label for="scale">Resize (%)</label>
+            <input type="number" id="scale" placeholder="e.g., 50 for 50%" min="1" max="100">
+        </div>
+
+        <!-- Compression Quality -->
+        <div class="section">
+            <label for="quality">Compression Quality (1-100)</label>
+            <input type="number" id="quality" value="85" min="1" max="100">
+        </div>
+
+        <!-- Process and Download Button -->
+        <button onclick="processImage()">Process Image</button>
+
+        <!-- Display Canvas -->
+        <canvas id="canvas" style="display:none;"></canvas>
+        
+        <!-- Download Link -->
+        <a id="downloadLink" download="processed_image.jpg" style="display: none;">Download Processed Image</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
