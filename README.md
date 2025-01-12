@@ -5,6 +5,7 @@
 The **Image Resizer and Filter Tool** is a web-based application that allows users to upload images, resize them, apply various filters, and download the processed images. Built with HTML, CSS, and JavaScript, this tool provides an intuitive interface for manipulating images directly in the browser.🖼️
 
 ## Features 🩵
+![image](https://github.com/user-attachments/assets/8f491216-96bf-475d-a7d2-4b1955db4534)
 
 - **Image Upload**: Easily upload images from your device.
 - **Resize Functionality**: Adjust the size of the image using a percentage slider.
